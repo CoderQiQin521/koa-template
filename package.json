@@ -19,6 +19,7 @@
   "homepage": "https://github.com/CoderQiQin521/koa-template#readme",
   "dependencies": {
     "koa": "^2.11.0",
+    "koa-cors": "0.0.16",
     "koa-router": "^8.0.8",
     "mysql2": "^2.1.0",
     "sequelize": "^5.21.7"
