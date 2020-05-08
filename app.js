@@ -1,10 +1,17 @@
 const Koa = require('koa')
 const cors = require('koa-cors')
 const app = new Koa()
+
+const router = require('./routes')
+
 app.use(cors())
 app.use((ctx) => {
   ctx.body = 'hello world'
 })
+
+app.use(router.routes())
+app.use(router.allowedMethods())
+
 var server = app.listen(3000, 'localhost', function () {
   var host = server.address().address
   var port = server.address().port
