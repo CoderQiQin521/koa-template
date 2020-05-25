@@ -4,4 +4,6 @@ const router = new Router({
 })
 
 router.get('/', async (ctx) => {})
+router.get('/user', User.index)
+
 module.exports = router
